@@ -1,6 +1,8 @@
+*{
+    box-sizing: border-box;
+}
 body{
     /* Took this part from my tip calculator section and replaced the photo*/
-    height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url(images/drinks.png);
     background-size: cover; /*This property/value pair tells the browser to scale the background image proportionally so that its width and height are equal to, or greater than, the width/height of the element. - Per https://www.webfx.com/blog/web-design/responsive-background-image/ */
@@ -8,4 +10,23 @@ body{
     background-position-y: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
     background-attachment: fixed; /*to prevent the photo from scrolling on the page or img ending before page does*/
     background-repeat: no-repeat; /*to prevent the photo from repeating on the screen*/
+    font-family: 'Shadows Into Light', cursive;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    width: 90vh;
+}
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    
 }
