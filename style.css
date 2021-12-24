@@ -15,8 +15,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 10;
     min-height: 100vh;
+}
+#header {
+	position: sticky; /*(recomended)*/
+    top: 0px;
+    position: fixed; 
 }
 .container{
     display: flex; /* makes the photos side by side */
@@ -26,12 +31,12 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh; 
+    height: 80vh; /* his set height */
     border-radius: 50px;
     flex: 0.5; /* flexbox allows the container/panel to stretch the photos/items uniformally on the page */
     position: relative; 
-    transition: flex 0.5 ease-in; /* an effect to happen when the photos transitions and ease in at .5 seconds  */
-    color: white; /* text colors w/ the photos  */
+    transition: flex 0.5s ease-in; /* an effect to happen when the photos transitions and ease in at .5 seconds  */
+    color: rgb(7, 4, 4); /* text colors w/ the photos  */
     cursor: pointer;
     margin: 10px; /* creates a space/gap between all the photos  */
 }
@@ -46,13 +51,32 @@ body{
 }
 .panel.active h3{ /* show the description only on the active photo  */
     opacity: 1;
+    transition: opacity 0.4s ease-in 0.4s; /* setting the transition of the h3 tag */
 }
-
+ /* unvisited link */
+ a:link {
+    color: rgb(221, 14, 14);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(17, 80, 17);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  } 
 @media(max-width:480px){ /* if the device screen is smaller than 480px  */
     .container{
         width: 100vh;
     }
-    .panel:nth-last-of-type(3),.panel:nth-last-of-type(4){ /* how many photos do we want to display */
+    .panel:nth-last-of-type(3),.panel:nth-last-of-type(4){ /* how many photos do we want to display  */
         display: none;
     }
 }
