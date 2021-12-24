@@ -21,7 +21,6 @@ body{
     font-family: 'Shadows Into Light', cursive;
     overflow: hidden;
     justify-content: center;
-    margin: 10;
     min-height: 100vh;
     display: flexbox; /* changed this from flex to flexbox*/
     align-items: center;
