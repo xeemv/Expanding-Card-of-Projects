@@ -3,21 +3,26 @@
 }
 /*h1 {
 	align-items: center; /*(recomended)*/
-    /*display: flex;
+   /* display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
     font-size: 20px;
-    /* made my own adjustments so I could display text at the top and center it.*
+    /* made my own adjustments so I could display text at the top and center it.
 }*/
 body{
-    /* Took this part from my tip calculator section and replaced the photo*/
-    background-image: url(images/drinks.png);
+    /* Took this part from my tip calculator section and replaced the photo, code line 14 - 19*/
+    background-image: url(images/plain.png);
+    background-size: cover; /*This property/value pair tells the browser to scale the background image proportionally so that its width and height are equal to, or greater than, the width/height of the element. - Per https://www.webfx.com/blog/web-design/responsive-background-image/ */
+    background-position-x: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
+    background-position-y: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
+    background-attachment: fixed; /*to prevent the photo from scrolling on the page or img ending before page does*/
+    background-repeat: no-repeat; /*to prevent the photo from repeating on the screen*/
     font-family: 'Shadows Into Light', cursive;
     margin: 0;
     overflow: hidden;
     justify-content: center;
     min-height: 100vh;
-    display: flex; /* changed this from flex to flexbox*/
+    display: flex;   /* changed this from flex to flexbox*/
     align-items: center;
 }
 .container{
@@ -79,7 +84,7 @@ body{
     .container{
         width: 100vw;
     }
-    .panel:nth-last-of-type(3),.panel:nth-last-of-type(4){ /* how many photos do we want to display  */
+    .panel:nth-last-of-type(5),.panel:nth-last-of-type(6){ /* how many photos do we want to display  */
         display: none;
     }
 }
