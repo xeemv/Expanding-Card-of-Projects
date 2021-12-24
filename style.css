@@ -3,7 +3,7 @@
 }
 body{
     /* Took this part from my tip calculator section and replaced the photo, code line 14 - 19*/
-    background-image: url(images/plain.png);
+    background-image: url(images/gold.png);
     background-size: cover; /*This property/value pair tells the browser to scale the background image proportionally so that its width and height are equal to, or greater than, the width/height of the element. - Per https://www.webfx.com/blog/web-design/responsive-background-image/ */
     background-position-x: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
     background-position-y: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
@@ -58,12 +58,12 @@ body{
 }
  /* unvisited link */
  a:link {
-    color: rgb(221, 14, 14);
+    color: rgb(238, 8, 150);
   }
   
   /* visited link */
   a:visited {
-    color: rgb(238, 67, 238);
+    color: rgb(233, 18, 47);
   }
   
   /* mouse over link */
