@@ -12,7 +12,7 @@ h1 {
 body{
     /* Took this part from my tip calculator section and replaced the photo*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(images/drinks.png);
+    /*background-image: url(images/drinks.png);
     background-size: cover; /*This property/value pair tells the browser to scale the background image proportionally so that its width and height are equal to, or greater than, the width/height of the element. - Per https://www.webfx.com/blog/web-design/responsive-background-image/ */
     background-position-x: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
     background-position-y: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
@@ -21,13 +21,13 @@ body{
     font-family: 'Shadows Into Light', cursive;
     overflow: hidden;
     justify-content: center;
-    min-height: 100vh;
-    display: flexbox; /* changed this from flex to flexbox*/
+    min-height: 400px;
+    /*display: flexbox; /* changed this from flex to flexbox*/
     align-items: center;
 }
 .container{
     display: flex; /* makes the photos side by side */
-    width: 90vh; /* container will not take too much space */
+    width: 70vh; /* container will not take too much space */
     max-width: 100%;
     padding: 5px;
     margin: 0 auto;
@@ -52,6 +52,7 @@ body{
     bottom: 20px;
     left: 20px; /* moving the description of the photo to the bottom left and how far from the border the text will be */
     opacity: 0; /* the text will not be visible */
+    /*font-size: 20px;*/
 }
 .panel.active{ /* when the panel is active  */
     flex:5; /* make only one of the photos larger than the rest when selected */
