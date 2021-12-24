@@ -1,6 +1,14 @@
 *{
     box-sizing: border-box;
 }
+h1 {
+	align-items: center; /*(recomended)*/
+    display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    font-size: 20px;
+    /* made my own adjustments so I could display text at the top and center it. */
+}
 body{
     /* Took this part from my tip calculator section and replaced the photo*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -12,38 +20,38 @@ body{
     background-repeat: no-repeat; /*to prevent the photo from repeating on the screen*/
     font-family: 'Shadows Into Light', cursive;
     overflow: hidden;
-    display: flex;
-    align-items: center;
     justify-content: center;
     margin: 10;
     min-height: 100vh;
-}
-#header {
-	position: sticky; /*(recomended)*/
-    top: 0px;
-    position: fixed; 
+    display: flexbox; /* changed this from flex to flexbox*/
+    align-items: center;
 }
 .container{
     display: flex; /* makes the photos side by side */
     width: 90vh; /* container will not take too much space */
+    max-width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    /* included code line 27-29 to prevent display flex from including h1 */
 }
 .panel{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh; /* his set height */
+    height: 90vh; /* his set height */
     border-radius: 50px;
     flex: 0.5; /* flexbox allows the container/panel to stretch the photos/items uniformally on the page */
     position: relative; 
     transition: flex 0.5s ease-in; /* an effect to happen when the photos transitions and ease in at .5 seconds  */
-    color: rgb(7, 4, 4); /* text colors w/ the photos  */
+    /* color: rgb(7, 4, 4); text colors w/ the photos  
+    can disregard as links on photos have set colors now */
     cursor: pointer;
     margin: 10px; /* creates a space/gap between all the photos  */
 }
 .panel h3{ /* these are the photo tags/descriptions  */
     position: absolute;
     bottom: 20px;
-    left: 20px; /* moving the description to the bottom left */
+    left: 20px; /* moving the description of the photo to the bottom left and how far from the border the text will be */
     opacity: 0; /* the text will not be visible */
 }
 .panel.active{ /* when the panel is active  */
@@ -60,7 +68,7 @@ body{
   
   /* visited link */
   a:visited {
-    color: rgb(17, 80, 17);
+    color: rgb(238, 67, 238);
   }
   
   /* mouse over link */
@@ -70,7 +78,7 @@ body{
   
   /* selected link */
   a:active {
-    color: blue;
+    color: rgb(119, 111, 111);
   } 
 @media(max-width:480px){ /* if the device screen is smaller than 480px  */
     .container{
