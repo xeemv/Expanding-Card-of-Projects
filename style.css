@@ -1,34 +1,29 @@
 *{
     box-sizing: border-box;
 }
-h1 {
+/*h1 {
 	align-items: center; /*(recomended)*/
-    display: flex;
+    /*display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
     font-size: 20px;
-    /* made my own adjustments so I could display text at the top and center it. */
-}
+    /* made my own adjustments so I could display text at the top and center it.*
+}*/
 body{
     /* Took this part from my tip calculator section and replaced the photo*/
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /*background-image: url(images/drinks.png);
-    background-size: cover; /*This property/value pair tells the browser to scale the background image proportionally so that its width and height are equal to, or greater than, the width/height of the element. - Per https://www.webfx.com/blog/web-design/responsive-background-image/ */
-    background-position-x: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
-    background-position-y: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
-    background-attachment: fixed; /*to prevent the photo from scrolling on the page or img ending before page does*/
-    background-repeat: no-repeat; /*to prevent the photo from repeating on the screen*/
+    background-image: url(images/drinks.png);
     font-family: 'Shadows Into Light', cursive;
+    margin: 0;
     overflow: hidden;
     justify-content: center;
-    min-height: 400px;
-    /*display: flexbox; /* changed this from flex to flexbox*/
+    min-height: 100vh;
+    display: flex; /* changed this from flex to flexbox*/
     align-items: center;
 }
 .container{
     display: flex; /* makes the photos side by side */
     width: 70vh; /* container will not take too much space */
-    max-width: 100%;
+    /*max-width: 100%;
     padding: 5px;
     margin: 0 auto;
     /* included code line 27-29 to prevent display flex from including h1 */
@@ -37,7 +32,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh; /* his set height */
+    height: 80vh; /* his set height */
     border-radius: 50px;
     flex: 0.5; /* flexbox allows the container/panel to stretch the photos/items uniformally on the page */
     position: relative; 
@@ -82,7 +77,7 @@ body{
   } 
 @media(max-width:480px){ /* if the device screen is smaller than 480px  */
     .container{
-        width: 100vh;
+        width: 100vw;
     }
     .panel:nth-last-of-type(3),.panel:nth-last-of-type(4){ /* how many photos do we want to display  */
         display: none;
