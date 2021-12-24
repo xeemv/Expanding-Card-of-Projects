@@ -111,6 +111,10 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 
 Followed a YouTube tutorial created by Asish George Tech. This tutorial is called "How to create Expanding Cards | Day 1 | HTML CSS JS | #50Projects50Days", published on Jan 10th, 2021.
 - [Asish George Tech](https://www.youtube.com/watch?v=69FkUGpw3ok)
+
+Copied a few small lines of code from another YouTube tutorial created by XAPISOFT on Jul 26th, 2021. Video is called, Javascript Beginner Projects | How to create Expanding Cards | HTML CSS JS.
+
+- [XAPISOFT](https://www.youtube.com/watch?v=dAVKEbfJcDc)
   
 Ballet Robo image credit to my mentor, Jolene Melanson.
 - [GitHub: JoleneMel](https://github.com/JoleneMel)
@@ -151,7 +155,7 @@ Project Link: [https://github.com/xeemv/Expanding-Card-of-Projects](https://xeem
 * <a href="https://webplatform.github.io/docs/css/functions/url/">CSS images: url() - WebPlateforms Doc</a>
 * <a href="https://www.webfx.com/blog/web-design/responsive-background-image/">CSS How to Create a Responsive Full Background Image Using CSS [Tutorial]</a>
 * <a href="https://www.youtube.com/watch?v=69FkUGpw3ok">Asish George Tech. This tutorial is called "How to create Expanding Cards | Day 1 | HTML CSS JS | #50Projects50Days"</a>
-<!--* <a href="https://github.com/iamcodefoxx/TipCalculator">codefoxx's github repo.</a>-->
+* <a href="https://www.youtube.com/watch?v=dAVKEbfJcDc">XAPISOFT's YouTube video called, "Javascript Beginner Projects | How to create Expanding Cards | HTML CSS JS", published on Jul 26th, 2021.</a>
 * <a href="http://mattkersley.com/responsive/">Responsive Web Design Testing Tool</a>
 * <a href="https://www.canva.com/photos/free/">Canva free stock photos</a>
 * <a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a>
