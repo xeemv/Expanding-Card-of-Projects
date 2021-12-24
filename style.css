@@ -1,14 +1,6 @@
 *{
     box-sizing: border-box;
 }
-/*h1 {
-	align-items: center; /*(recomended)*/
-   /* display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-    font-size: 20px;
-    /* made my own adjustments so I could display text at the top and center it.
-}*/
 body{
     /* Took this part from my tip calculator section and replaced the photo, code line 14 - 19*/
     background-image: url(images/plain.png);
@@ -21,23 +13,26 @@ body{
     margin: 0;
     overflow: hidden;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;   /* changed this from flex to flexbox*/
+    flex-direction: column; /* added this per second YT video, see line below. YT video: https://www.youtube.com/watch?v=dAVKEbfJcDc.*/
     align-items: center;
+    padding: 0; /* added this per second YT video*/
 }
 .container{
     display: flex; /* makes the photos side by side */
-    width: 70vh; /* container will not take too much space */
+    width: 90vh; /* container will not take too much space */
     /*max-width: 100%;
     padding: 5px;
     margin: 0 auto;
     /* included code line 27-29 to prevent display flex from including h1 */
+    margin: auto;
 }
 .panel{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh; /* his set height */
+    height: 60vh; /* 1st video was set height @ 80vh and 2nd video is set 60vh */
     border-radius: 50px;
     flex: 0.5; /* flexbox allows the container/panel to stretch the photos/items uniformally on the page */
     position: relative; 
@@ -50,7 +45,7 @@ body{
 .panel h3{ /* these are the photo tags/descriptions  */
     position: absolute;
     bottom: 20px;
-    left: 20px; /* moving the description of the photo to the bottom left and how far from the border the text will be */
+    left: 5px; /* moving the description of the photo to the bottom left and how far from the border the text will be */
     opacity: 0; /* the text will not be visible */
     /*font-size: 20px;*/
 }
